@@ -17,7 +17,7 @@ mkdir -p $INSTALL_DIR
 $ANDROID_NDK_ROOT/build/tools/make-standalone-toolchain.sh --platform=$ANDROID_API --stl=gnustl --toolchain=$TOOLCHAIN-4.9 --arch=$ANDROID_ARCH --install-dir=$TOOLCHAIN_DIR
 ANDROID_SYSROOT=$TOOLCHAIN_DIR/sysroot
 export PATH=$PATH:$TOOLCHAIN_DIR/bin
-export CFLAGS="--sysroot=$ANDROID_SYSROOT -L$INSTALL_DIR/lib -pthread -I$ROOT_DIR/glob"
+export CFLAGS="--sysroot=$ANDROID_SYSROOT -L$INSTALL_DIR/lib -pthread -I$ROOT_DIR/glob -I$TOOLCHAIN_DIR/include/c++/4.9"
 export CPPFLAGS=$CFLAGS
 export CXXFLAGS=$CFLAGS
 export ac_cv_func_malloc_0_nonnull=yes
