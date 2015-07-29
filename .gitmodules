@@ -1,0 +1,22 @@
+[submodule "libimobiledevice"]
+	path = libimobiledevice
+	url = git@github.com:seespace/libimobiledevice.git
+[submodule "usbmuxd"]
+	path = usbmuxd
+	url = git@github.com:seespace/usbmuxd.git
+[submodule "libusbmuxd"]
+	path = libusbmuxd
+	url = git@github.com:seespace/libusbmuxd.git
+[submodule "libplist"]
+	path = libplist
+	url = git@github.com:seespace/libplist.git
+[submodule "libxml2"]
+	path = libxml2
+	url = git@github.com:seespace/libxml2.git
+[submodule "libusb"]
+	path = libusb
+	url = git@github.com:seespace/libusb.git
+[submodule "openssl"]
+	path = openssl
+	url = https://github.com/openssl/openssl.git
+	branch = OpenSSL_1_0_1-stable
